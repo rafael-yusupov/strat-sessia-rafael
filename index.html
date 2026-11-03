@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Запись на разбор · Рафаэль</title>
-<meta name="description" content="20 минут в Zoom 1 на 1 с Рафаэлем. План роста до $3 000+ в месяц и две рабочие тетради в подарок.">
+<meta name="description" content="20 минут в Zoom 1 на 1 с Рафаэлем. Бонусы в Telegram сразу после анкеты, на созвоне — план роста до $3 000+ в месяц.">
 <meta name="theme-color" content="#09090A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +97,14 @@ h1 em,h2 em{font-style:normal;background:linear-gradient(100deg,var(--gold-2),va
 .bonus small{display:block;color:var(--muted);font-size:13px;margin-top:3px;line-height:1.35}
 .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1a1405;background:var(--gold);border-radius:6px;padding:2px 6px;margin-bottom:4px}
 
+.bonus.pack{align-items:flex-start;border-color:var(--gold-line);background:linear-gradient(135deg,rgba(233,185,73,.10),var(--card) 60%)}
+.pack-list{list-style:none;margin-top:6px;display:flex;flex-direction:column;gap:4px}
+.pack-list li{position:relative;padding-left:18px;font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.pack-list li:before{content:"";position:absolute;left:2px;top:.5em;width:7px;height:7px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+.pack-list.big{position:relative;margin:2px 0 16px;gap:8px}
+.pack-list.big li{font-size:15px;color:var(--ink);font-weight:600;padding-left:20px}
+.tg-btn{position:relative;margin-top:2px}
+.tg-note{position:relative;text-align:center;font-size:13px;color:var(--ink-2);margin-top:10px}
 .meta-row{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:16px}
 .meta-row span{display:inline-flex;align-items:center;gap:5px}
 
@@ -156,12 +164,12 @@ input.bad{border-color:var(--bad)}
 @keyframes pop{from{transform:scale(.3);opacity:0}}
 .thanks{text-align:center}
 .thanks h1{margin-top:22px}
-.steps{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 16px;margin-top:22px;text-align:left}
+.steps{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 16px;margin-top:14px;text-align:left}
 .step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink-2)}
 .step b{color:var(--ink)}
 .step:last-child{border-bottom:0}
 .step i{font-style:normal;flex:0 0 26px;height:26px;border-radius:50%;background:var(--gold-soft);border:1px solid var(--gold-line);color:var(--gold-2);font-size:13px;font-weight:800;display:grid;place-items:center}
-.unlocked{background:linear-gradient(160deg,#1C1709,#121214 55%);border:1px solid var(--gold-line);border-radius:20px;padding:18px 16px;margin-top:14px;text-align:left;position:relative;overflow:hidden}
+.unlocked{background:linear-gradient(160deg,#1C1709,#121214 55%);border:1px solid var(--gold-line);border-radius:20px;padding:18px 16px;margin-top:22px;text-align:left;position:relative;overflow:hidden}
 .unlocked:before{content:"";position:absolute;width:220px;height:220px;right:-80px;top:-90px;border-radius:50%;background:radial-gradient(circle,rgba(233,185,73,.35),transparent 70%)}
 .unlocked .bonus-title{color:var(--gold-2);margin:0 0 10px;position:relative}
 .unlocked .bonus{background:rgba(255,255,255,.03);position:relative}
@@ -184,8 +192,8 @@ input.bad{border-color:var(--bad)}
     </div>
     <div class="gifts-wrap" id="giftsWrap">
       <div class="gifts">
+        <div class="gift">🎁</div>
         <div class="gift">🎯</div>
-        <div class="gift">📗</div>
         <div class="gift">📘</div>
       </div>
       <div class="gifts-label" id="giftsLabel">открыто 0 из 3</div>
@@ -200,10 +208,15 @@ input.bad{border-color:var(--bad)}
     <p class="lead">Ответь на пару вопросов — так я приду на созвон уже понимая твою ситуацию, и мы сразу перейдём к делу. Займёт <b>меньше 2&nbsp;минут</b>.</p>
 
 
-    <div class="bonus-title">Что заберёшь с созвона</div>
+    <div class="bonus-title">Сразу после анкеты</div>
     <div class="bonuses">
-      <div class="bonus main"><div class="ic">🎯</div><div><span class="tag">Главное</span><b>Личный план выхода на <span style="white-space:nowrap">$3&nbsp;000+/мес</span></b><small>Конкретные шаги на 1–2 месяца под твою ситуацию: где брать клиентов, как поднять чек и что убрать</small></div></div>
-      <div class="bonus"><div class="ic">📗</div><div><b>Тетрадь «8 рабочих источников проектов»</b><small>Где искать клиентов в 2026–2027</small></div></div>
+      <div class="bonus pack"><div class="ic">🎁</div><div><span class="tag">Моментально</span><b>Доступ в Telegram-канал с бонусами</b>
+        <ul class="pack-list"><li>Кейс «5 000+ заказов с рекламы»</li><li>5 способов найти клиентов на таргет</li><li>5 ошибок, которые убивают запуск</li></ul></div></div>
+    </div>
+
+    <div class="bonus-title">На созвоне</div>
+    <div class="bonuses">
+      <div class="bonus main"><div class="ic">🎯</div><div><b>Личный план выхода на <span style="white-space:nowrap">$3&nbsp;000+/мес</span></b><small>Конкретные шаги на 1–2 месяца под твою ситуацию: где брать клиентов, как поднять чек и что убрать</small></div></div>
       <div class="bonus"><div class="ic">📘</div><div><b>Тетрадь «Шаблон стратегии»</b><small>Как вести проект, чтобы клиент видел результат и продлевался</small></div></div>
     </div>
 
@@ -233,7 +246,7 @@ input.bad{border-color:var(--bad)}
     <h2>Сколько клиентов <em>ведёшь сейчас?</em></h2>
     <p class="hint">Считаем все текущие проекты</p>
     <div class="options">
-      <button class="opt" type="button" data-v="Пока нет" data-r="Разберём, откуда их брать — тетрадь как раз про это"><span class="em">🔍</span>Пока нет<span class="ck"></span></button>
+      <button class="opt" type="button" data-v="Пока нет" data-r="Бонус «5 способов найти клиентов» как раз про это 👀"><span class="em">🔍</span>Пока нет<span class="ck"></span></button>
       <button class="opt" type="button" data-v="1–2" data-r="Хорошая база, есть куда расти 📈"><span class="em">✌️</span>1–2 проекта<span class="ck"></span></button>
       <button class="opt" type="button" data-v="3–5" data-r="Хорошая загрузка 🔥"><span class="em">🙌</span>3–5 проектов<span class="ck"></span></button>
       <button class="opt" type="button" data-v="6 и больше" data-r="Серьёзно! Поговорим про масштаб и чек 🚀"><span class="em">🚀</span>6 и больше<span class="ck"></span></button>
@@ -320,19 +333,25 @@ input.bad{border-color:var(--bad)}
     <h1><span id="thxName">Готово</span>, ты <em>в списке!</em></h1>
     <p class="lead">Спасибо за ответы — посмотрю их до созвона, чтобы прийти с готовыми идеями под твою ситуацию.</p>
 
+    <div class="unlocked">
+      <div class="bonus-title">🔓 Твои бонусы уже открыты</div>
+      <ul class="pack-list big"><li>Кейс «5 000+ заказов с рекламы»</li><li>5 способов найти клиентов на таргет</li><li>5 ошибок, которые убивают запуск</li></ul>
+      <a class="btn tg-btn" id="tgBonus" href="https://t.me/+txfdpu1DZso1YTky" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13 1.4 11.5c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4Z"/></svg>
+        Забрать бонусы в Telegram
+      </a>
+      <p class="tg-note">Всё лежит в <b>закреплённом сообщении</b> канала 📌</p>
+    </div>
+
     <div class="steps">
       <div class="step"><i>1</i><span>В ближайшее время напишу тебе в <b>Telegram</b> — подберём удобную дату и время</span></div>
       <div class="step"><i>2</i><span>Пришлю ссылку на <b>Zoom</b>. Созвон — 20 минут, 1 на 1, конфиденциально</span></div>
-      <div class="step"><i>3</i><span>На звонке — разбор и <b>план роста</b> + тетради в подарок 👇</span></div>
+      <div class="step"><i>3</i><span>На звонке заберёшь ещё 2 подарка 👇</span></div>
     </div>
 
-    <div class="unlocked">
-      <div class="bonus-title">🔓 Открыто 3 из 3 — твои подарки</div>
-      <div class="bonuses">
-        <div class="bonus"><div class="ic">🎯</div><div><b>Личный план выхода на <span style="white-space:nowrap">$3&nbsp;000+/мес</span></b><small>Шаги на 1–2 месяца под твою ситуацию</small></div></div>
-        <div class="bonus"><div class="ic">📗</div><div><b>8 рабочих источников проектов</b><small>Рабочая тетрадь на 2026–2027</small></div></div>
-        <div class="bonus"><div class="ic">📘</div><div><b>Шаблон стратегии</b><small>Рабочая тетрадь для результата клиенту</small></div></div>
-      </div>
+    <div class="bonuses" style="margin-top:10px;text-align:left">
+      <div class="bonus main"><div class="ic">🎯</div><div><b>Личный план выхода на <span style="white-space:nowrap">$3&nbsp;000+/мес</span></b><small>Шаги на 1–2 месяца под твою ситуацию</small></div></div>
+      <div class="bonus"><div class="ic">📘</div><div><b>Тетрадь «Шаблон стратегии»</b><small>Для результата клиенту и продлений</small></div></div>
     </div>
     <p class="under-btn" style="margin-top:14px">Мест всего 15 — если не увидишь сообщения в течение дня, проверь в Telegram чаты с незнакомыми контактами и папку «Архив» ✨</p>
   </section>
@@ -479,6 +498,8 @@ $('#submit').onclick = async ()=>{
   $('#thxName').textContent=data.name.split(' ')[0];
   go(7,false); hist.length=0; confetti();
 };
+
+$('#tgBonus').addEventListener('click',()=>{ try{ fbq('trackCustom','BonusChannelClick'); }catch(e){} });
 
 function confetti(){
   const box=$('#confetti'), cols=['#E9B949','#F7D98A','#B8891F','#F5F2EA','#3A3A40'];
